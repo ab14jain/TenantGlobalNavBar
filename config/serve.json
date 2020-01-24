@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://pragati20.sharepoint.com/sites/SiteCollAdmins/SitePages/Home.aspx",
+      "customActions": {
+        "16b5e804-f688-489b-ac04-6c90dc508863": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "TopMenuTermSet":"SiteCollNavigation",
+            "BottomMenuTermSet":"SiteCollNavigation"
+          }
+        }
+      }
+    },
+    "tenantGlobalNavBar": {
+      "pageUrl": "https://pragati20.sharepoint.com/sites/SiteCollAdmins/SitePages/Home.aspx",
+      "customActions": {
+        "16b5e804-f688-489b-ac04-6c90dc508863": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
